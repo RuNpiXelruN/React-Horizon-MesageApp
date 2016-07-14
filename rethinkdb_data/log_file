@@ -1,0 +1,33 @@
+2016-07-14T14:15:33.490820000 0.010900s notice: Recursively removing directory /Users/justindavidson/apps/js_apps/horizon-stuff/message-test/rethinkdb_data/tmp
+2016-07-14T14:15:33.493326000 0.013410s notice: Initializing directory /Users/justindavidson/apps/js_apps/horizon-stuff/message-test/rethinkdb_data
+2016-07-14T14:15:33.493449000 0.013527s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/justindavidson/apps/js_apps/horizon-stuff/message-test/rethinkdb_data' did not already exist or is empty.)
+2016-07-14T14:15:33.493473000 0.013551s notice: Running rethinkdb 2.3.4 (CLANG 7.3.0 (clang-703.0.29))...
+2016-07-14T14:15:33.501317000 0.021398s notice: Running on Darwin 14.5.0 x86_64
+2016-07-14T14:15:33.501390000 0.021469s notice: Loading data from directory /Users/justindavidson/apps/js_apps/horizon-stuff/message-test/rethinkdb_data
+2016-07-14T14:15:33.689153000 0.209233s info: Cache size is set to 200 MB
+2016-07-14T14:15:33.689182000 0.209261s warn: Cache size does not leave much memory for server and query overhead (available memory: 400 MB).
+2016-07-14T14:15:33.690289000 0.210368s notice: Listening for intracluster connections on port 59210
+2016-07-14T14:15:33.694108000 0.214187s notice: Listening for client driver connections on port 59211
+2016-07-14T14:15:33.694401000 0.214479s notice: Listening for administrative HTTP connections on port 59212
+2016-07-14T14:15:33.694441000 0.214519s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-07-14T14:15:33.694471000 0.214549s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-07-14T14:15:33.694474000 0.214552s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-07-14T14:15:33.694483000 0.214561s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-07-14T14:15:33.694486000 0.214564s notice: Server ready, "justins_air_ait_sydney_net_au_iby" 64ff0e71-8e99-41a3-87a5-89413b8a0eaa
+2016-07-14T14:15:33.972761000 0.492840s info: Table f8d6caaf-a3cc-4890-9d8f-574eaeebcb10: Starting a new Raft election for term 1.
+2016-07-14T14:15:33.974980000 0.495059s info: Table f8d6caaf-a3cc-4890-9d8f-574eaeebcb10: Added replica on this server.
+2016-07-14T14:15:33.997787000 0.517866s info: Table f8d6caaf-a3cc-4890-9d8f-574eaeebcb10: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-14T14:15:34.676456000 1.196488s info: Table a954f250-6aaf-4dbf-9f05-e16d454c5550: Starting a new Raft election for term 1.
+2016-07-14T14:15:34.676660000 1.196691s info: Table a954f250-6aaf-4dbf-9f05-e16d454c5550: Added replica on this server.
+2016-07-14T14:15:34.684814000 1.204846s info: Table a954f250-6aaf-4dbf-9f05-e16d454c5550: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-14T14:15:35.309335000 1.829367s info: Table ed81f077-ded9-48ab-b7a6-6c59ea89f263: Starting a new Raft election for term 1.
+2016-07-14T14:15:35.309617000 1.829649s info: Table ed81f077-ded9-48ab-b7a6-6c59ea89f263: Added replica on this server.
+2016-07-14T14:15:35.318219000 1.838251s info: Table ed81f077-ded9-48ab-b7a6-6c59ea89f263: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-14T14:15:35.934775000 2.454807s info: Table a712930f-4d29-4994-8ea2-ebd4dc89c4fa: Starting a new Raft election for term 1.
+2016-07-14T14:15:35.935091000 2.455123s info: Table a712930f-4d29-4994-8ea2-ebd4dc89c4fa: Added replica on this server.
+2016-07-14T14:15:35.943570000 2.463602s info: Table a712930f-4d29-4994-8ea2-ebd4dc89c4fa: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-14T14:41:22.607837000 1549.090847s notice: Server got SIGINT from pid 44413, uid 501; shutting down...
+2016-07-14T14:41:22.612846000 1549.095857s notice: Shutting down client connections...
+2016-07-14T14:41:22.639521000 1549.122531s notice: All client connections closed.
+2016-07-14T14:41:22.639546000 1549.122555s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-07-14T14:41:22.704446000 1549.187456s notice: Storage engine shut down.
