@@ -31,3 +31,24 @@
 2016-07-14T14:41:22.639521000 1549.122531s notice: All client connections closed.
 2016-07-14T14:41:22.639546000 1549.122555s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
 2016-07-14T14:41:22.704446000 1549.187456s notice: Storage engine shut down.
+2016-07-14T15:17:13.754521000 0.445713s notice: Running rethinkdb 2.3.4 (CLANG 7.3.0 (clang-703.0.29))...
+2016-07-14T15:17:13.764804000 0.455987s notice: Running on Darwin 14.5.0 x86_64
+2016-07-14T15:17:13.764870000 0.456052s notice: Loading data from directory /Users/justindavidson/apps/js_apps/horizon-stuff/message-test/rethinkdb_data
+2016-07-14T15:17:13.842891000 0.534073s info: Cache size is set to 200 MB
+2016-07-14T15:17:13.842900000 0.534082s warn: Cache size does not leave much memory for server and query overhead (available memory: 462 MB).
+2016-07-14T15:17:13.843551000 0.534733s notice: Listening for intracluster connections on port 59963
+2016-07-14T15:17:13.936072000 0.627254s notice: Listening for client driver connections on port 59964
+2016-07-14T15:17:13.936291000 0.627473s notice: Listening for administrative HTTP connections on port 59965
+2016-07-14T15:17:13.936429000 0.627611s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-07-14T15:17:13.936434000 0.627616s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-07-14T15:17:13.936438000 0.627620s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-07-14T15:17:13.936443000 0.627624s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-07-14T15:17:13.936447000 0.627629s notice: Server ready, "justins_air_ait_sydney_net_au_iby" 64ff0e71-8e99-41a3-87a5-89413b8a0eaa
+2016-07-14T15:17:15.316293000 2.007437s info: Table ed81f077-ded9-48ab-b7a6-6c59ea89f263: Starting a new Raft election for term 2.
+2016-07-14T15:17:15.326386000 2.017529s info: Table ed81f077-ded9-48ab-b7a6-6c59ea89f263: This server is Raft leader for term 2. Latest log index is 4.
+2016-07-14T15:17:15.539624000 2.230767s info: Table a712930f-4d29-4994-8ea2-ebd4dc89c4fa: Starting a new Raft election for term 2.
+2016-07-14T15:17:15.555454000 2.246597s info: Table a712930f-4d29-4994-8ea2-ebd4dc89c4fa: This server is Raft leader for term 2. Latest log index is 3.
+2016-07-14T15:17:15.588725000 2.279869s info: Table f8d6caaf-a3cc-4890-9d8f-574eaeebcb10: Starting a new Raft election for term 2.
+2016-07-14T15:17:15.611219000 2.302363s info: Table f8d6caaf-a3cc-4890-9d8f-574eaeebcb10: This server is Raft leader for term 2. Latest log index is 3.
+2016-07-14T15:17:15.807007000 2.498150s info: Table a954f250-6aaf-4dbf-9f05-e16d454c5550: Starting a new Raft election for term 2.
+2016-07-14T15:17:15.915258000 2.606402s info: Table a954f250-6aaf-4dbf-9f05-e16d454c5550: This server is Raft leader for term 2. Latest log index is 3.

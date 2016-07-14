@@ -29090,6 +29090,14 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _message_list = __webpack_require__(557);
+
+	var _message_list2 = _interopRequireDefault(_message_list);
+
+	var _message_form = __webpack_require__(559);
+
+	var _message_form2 = _interopRequireDefault(_message_form);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var App = function (_Component) {
@@ -29106,7 +29114,8 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        'Hi from App.js'
+	        _react2.default.createElement(_message_form2.default, null),
+	        _react2.default.createElement(_message_list2.default, null)
 	      );
 	    }
 	  }]);
@@ -30642,6 +30651,180 @@
 	var $export = __webpack_require__(483)
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 	$export($export.S, 'Object', {create: __webpack_require__(514)});
+
+/***/ },
+/* 557 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _getPrototypeOf = __webpack_require__(471);
+
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+	var _classCallCheck2 = __webpack_require__(497);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _createClass2 = __webpack_require__(498);
+
+	var _createClass3 = _interopRequireDefault(_createClass2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(502);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(549);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _react = __webpack_require__(300);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _message = __webpack_require__(558);
+
+	var _message2 = _interopRequireDefault(_message);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var MessageList = function (_Component) {
+	  (0, _inherits3.default)(MessageList, _Component);
+
+	  function MessageList(props) {
+	    (0, _classCallCheck3.default)(this, MessageList);
+
+	    var _this = (0, _possibleConstructorReturn3.default)(this, (0, _getPrototypeOf2.default)(MessageList).call(this, props));
+
+	    _this.state = {
+	      convo: [{ author: "james", text: "james is not a very nice person" }, { author: "james", text: "james is not a very nice person" }, { author: "james", text: "james is not a very nice person" }, { author: "james", text: "james is not a very nice person" }]
+	    };
+	    return _this;
+	  }
+
+	  (0, _createClass3.default)(MessageList, [{
+	    key: 'render',
+	    value: function render() {
+	      var Msgs = this.state.convo.map(function (message, i) {
+	        return _react2.default.createElement(_message2.default, { msg: message, key: i });
+	      });
+
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        Msgs
+	      );
+	    }
+	  }]);
+	  return MessageList;
+	}(_react.Component);
+
+	exports.default = MessageList;
+
+/***/ },
+/* 558 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _getPrototypeOf = __webpack_require__(471);
+
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+	var _classCallCheck2 = __webpack_require__(497);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _createClass2 = __webpack_require__(498);
+
+	var _createClass3 = _interopRequireDefault(_createClass2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(502);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(549);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _react = __webpack_require__(300);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Message = function (_Component) {
+	  (0, _inherits3.default)(Message, _Component);
+
+	  function Message(props) {
+	    (0, _classCallCheck3.default)(this, Message);
+
+	    var _this = (0, _possibleConstructorReturn3.default)(this, (0, _getPrototypeOf2.default)(Message).call(this, props));
+
+	    _this.props = props;
+	    return _this;
+	  }
+
+	  (0, _createClass3.default)(Message, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        this.props.msg.author,
+	        ' posted: ',
+	        this.props.msg.text
+	      );
+	    }
+	  }]);
+	  return Message;
+	}(_react.Component);
+
+	exports.default = Message;
+
+/***/ },
+/* 559 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(300);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var MessageForm = function MessageForm() {
+	  return _react2.default.createElement(
+	    "div",
+	    null,
+	    _react2.default.createElement(
+	      "form",
+	      null,
+	      _react2.default.createElement(
+	        "button",
+	        null,
+	        "Post"
+	      ),
+	      _react2.default.createElement("input", { placeholder: "by.." }),
+	      _react2.default.createElement("input", { placeholder: "message.." })
+	    )
+	  );
+	};
+
+	exports.default = MessageForm;
 
 /***/ }
 /******/ ]);
